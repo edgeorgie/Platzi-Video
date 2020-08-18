@@ -1,8 +1,7 @@
 body {
   margin: 0px;
-  background-color: #8F57FD;
   font-family: 'Mulish', sans-serif;
-  overflow-x: hidden;
+  background-image: linear-gradient( 45deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
 }
 
 a {
