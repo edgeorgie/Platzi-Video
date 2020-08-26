@@ -173,7 +173,7 @@ a {
 
 .login {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 0px 30px;
@@ -184,10 +184,13 @@ a {
   background-color: rgb(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 25px;
-  padding: 30px 35px 30px 35px;
+  display: flex;
   color: white;
   min-height: 700px;
+  padding: 40px 50px;
   width: 300px;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .login__container--form {
@@ -200,7 +203,48 @@ a {
 }
 
 #cbox1 {
-  margin: 0px;
+  margin-left: 5px;
+}
+
+.input__container--email {
+  background-color: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 2px solid white;
+  font-family: 'Mulish', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 15px 15px;
+}
+
+.input__container--password {
+  background-color: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 2px solid white;
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 15px 15px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  height: 50px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  
 }
 
 .login__container--remember-me {
@@ -234,6 +278,33 @@ a {
   font-size: 14px;
 }
 
+.login__container--register a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .login__container--register a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  
+}
+
+.footer__right{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.footer a {
+  padding-left: 30px;
+}
+
+.footer a:hover {
   text-decoration: underline;
 }
