@@ -3,6 +3,7 @@ body {
   font-family: 'Mulish', sans-serif;
   background: linear-gradient(rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 a {
@@ -78,6 +79,15 @@ a {
   font-size: 30px;
 }
 
+.categories__title {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
 .input {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
@@ -97,8 +107,8 @@ a {
 
 .carousel {
   width: 100%;
-  overflow: hidden scroll;
-  padding: 30px;
+  padding: 20px 30px;
+  overflow: scroll;
   position: relative;
 }
 
@@ -171,6 +181,57 @@ a {
   margin: 2.5px 3.5px;
 }
 
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 8px;   
+  background:rgba(82, 42, 42, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar {
+	background-color: rgb(121, 159, 255);
+	border-radius: 50px;
+	height: 12px;
+	width: 0px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+	background-color: rgb(104, 147, 255);
+	border-radius: 10px;
+	height: 10px;
+}
+
+.carousel::-moz-scrollbar {
+	background-color: whitesmoke;
+	border-radius: 50px;
+	height: 10px;
+	width: 0px;
+}
+
+.carousel::-moz-scrollbar-thumb {
+	background-color: #ffe604;
+	border-radius: 10px;
+	height: 10px;
+}
+
+.carousel::-o-scrollbar {
+	background-color: whitesmoke;
+	border-radius: 50px;
+	height: 10px;
+	width: 0px;
+}
+
+.carousel::-o-scrollbar-thumb {
+	background-color: #ffe604;
+	border-radius: 10px;
+	height: 10px;
+}
+
 .login-video {
   padding: 30px 30px;
   position: absolute;
@@ -180,7 +241,7 @@ a {
   min-height: calc(100vh - 200px);
   min-width: calc(150vh - 200px);
   border: 2px solid white;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .login {
@@ -196,12 +257,12 @@ a {
 .login__container {
   background-color: rgb(255, 255, 255, 0.1);
   border: 2px solid white;
-  border-radius: 25px;
+  border-radius: 35px;
   display: flex;
   color: white;
   min-height: 700px;
   padding: 40px 50px;
-  width: 300px;
+  width: 350px;
   justify-content: space-around;
   flex-direction: column;
 }
@@ -212,7 +273,7 @@ a {
 }
 
 .login__container--form label {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #cbox1 {
@@ -274,7 +335,7 @@ a {
 .login__container--social-media > div {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 15px;
 }
 
@@ -284,11 +345,11 @@ a {
 }
 
 .login__container--register {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .login__container--register {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .login__container--register a {
@@ -320,4 +381,18 @@ a {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
