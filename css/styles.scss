@@ -1,7 +1,7 @@
 body {
   margin: 0px;
-  font-family: "Mulish", sans-serif;
-  background: linear-gradient(#ee3a88 11.2%, #80a2f5 91.1%);
+  font-family: 'Mulish', sans-serif;
+  background: linear-gradient(rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -38,6 +38,7 @@ a {
   width: 100px;
   margin: 0px;
   text-align: right;
+  
 }
 
 .header__menu:hover ul, ul:hover {
@@ -60,12 +61,13 @@ a {
   width: 40px;
 }
 
-.header__menu--profile p {
+.header__menu--profile p{
   margin: 0px;
   color: white;
 }
 
 /* MAIN SEARCH BAR */
+
 .main {
   display: flex;
   flex-direction: column;
@@ -84,7 +86,7 @@ a {
   border: 2px solid white;
   border-radius: 35px;
   color: white;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 16px;
   height: 50px;
   outline: none;
@@ -106,6 +108,7 @@ a {
 }
 
 /* Carousel */
+
 .carousel {
   width: 100%;
   padding: 20px 30px;
@@ -137,7 +140,7 @@ a {
   transform: translate3d(100px, 0, 0);
 }
 
-.carousel__container:hover .carousel-item {
+.carousel__container:hover .carousel-item{
   opacity: 0.35;
 }
 
@@ -178,14 +181,14 @@ a {
   height: 25px;
 }
 
-.carousel-item__details--title, .carousel-item__details--subtitle {
+.carousel-item__details--title, .carousel-item__details--subtitle{
   margin: 2.5px 3.5px;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 8px;
-  background: rgba(82, 42, 42, 0.4);
+  width: 12px; 
+  height: 8px;   
+  background:rgba(82, 42, 42, 0.4);
   border-radius: 4px;
 }
 
@@ -195,45 +198,46 @@ a {
 }
 
 .carousel::-webkit-scrollbar {
-  background-color: #799fff;
-  border-radius: 50px;
-  height: 12px;
-  width: 0px;
+	background-color: rgb(121, 159, 255);
+	border-radius: 50px;
+	height: 12px;
+	width: 0px;
 }
 
 .carousel::-webkit-scrollbar-thumb {
-  background-color: #6893ff;
-  border-radius: 10px;
-  height: 10px;
+	background-color: rgb(104, 147, 255);
+	border-radius: 10px;
+	height: 10px;
 }
 
 .carousel::-moz-scrollbar {
-  background-color: whitesmoke;
-  border-radius: 50px;
-  height: 10px;
-  width: 0px;
+	background-color: whitesmoke;
+	border-radius: 50px;
+	height: 10px;
+	width: 0px;
 }
 
 .carousel::-moz-scrollbar-thumb {
-  background-color: #ffe604;
-  border-radius: 10px;
-  height: 10px;
+	background-color: #ffe604;
+	border-radius: 10px;
+	height: 10px;
 }
 
 .carousel::-o-scrollbar {
-  background-color: whitesmoke;
-  border-radius: 50px;
-  height: 10px;
-  width: 0px;
+	background-color: whitesmoke;
+	border-radius: 50px;
+	height: 10px;
+	width: 0px;
 }
 
 .carousel::-o-scrollbar-thumb {
-  background-color: #ffe604;
-  border-radius: 10px;
-  height: 10px;
+	background-color: #ffe604;
+	border-radius: 10px;
+	height: 10px;
 }
 
 /* register */
+
 .register {
   display: flex;
   align-items: center;
@@ -244,7 +248,7 @@ a {
 }
 
 .register__container {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 35px;
   color: white;
@@ -254,6 +258,7 @@ a {
   padding: 40px 50px;
   width: 350px;
   justify-content: space-around;
+  
 }
 
 .register__container h2 {
@@ -265,22 +270,23 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .register__container--login {
   display: flex;
   justify-content: center;
 }
-
 .register__container--login a {
   font-weight: bold;
 }
-
+  
 .register__container--login a:hover {
   text-decoration: underline;
 }
 
 /* LOGIN */
+
 .login {
   display: flex;
   align-items: flex-end;
@@ -303,7 +309,7 @@ a {
 }
 
 .login__container {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 35px;
   display: flex;
@@ -337,7 +343,7 @@ a {
   background-color: transparent;
   border: 0px;
   border-bottom: 2px solid white;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin-top: 15px;
   margin-bottom: 15px;
   outline: none;
@@ -350,7 +356,7 @@ a {
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: bold;
   font-size: 18px;
   height: 50px;
@@ -358,6 +364,7 @@ a {
   margin-top: 25px;
   margin-bottom: 10px;
   outline: none;
+  
 }
 
 .login__container--remember-me {
@@ -400,6 +407,7 @@ a {
 }
 
 /*FOOTER*/
+
 .footer {
   display: flex;
   align-items: center;
@@ -408,6 +416,7 @@ a {
   font-size: 18px;
   justify-content: space-between;
   width: 100%;
+  
 }
 
 .footer a:hover {
@@ -418,16 +427,17 @@ a {
   padding-left: 30px;
 }
 
-.footer-right p {
+.footer-right p{
   margin: 0px;
   padding-right: 30px;
+  
 }
 
-.footer-right a {
+.footer-right a{
   text-decoration: underline;
 }
 
-.footer-right a:hover {
+.footer-right a:hover{
   font-weight: bold;
 }
 
@@ -448,7 +458,9 @@ a {
     flex-direction: column;
   }
 }
+
 /*404 PAGE*/
+
 .page-error {
   color: white;
   display: flex;
@@ -460,7 +472,7 @@ a {
 
 .page-error__container {
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 35px;
   display: flex;
@@ -485,33 +497,14 @@ a {
 }
 
 @keyframes hinge {
-  0% {
-    transform: rotate(0);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  20%, 60% {
-    transform: rotate(75deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  40% {
-    transform: rotate(60deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  80% {
-    transform: rotate(60deg) translateY(0);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  100% {
-    transform: translateY(700px);
-  }
+  0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+  20%, 60% {transform: rotate(75deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+  40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+  80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+  100% {transform: translateY(700px);}
 }
+
 .hinge {
   margin: 20px;
   animation-name: hinge;
 }
-
-/*# sourceMappingURL=styles.css.map */
