@@ -1,8 +1,14 @@
-$font-stack:    Helvetica, sans-serif;
+$bg-color: linear-gradient(rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+$bg-color-carousel: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+$bg-color-opacity: rgba(255, 255, 255, 0.1);
+$general-font: "Mulish", sans-serif;
+
+
+
 body {
   margin: 0px;
-  font-family: 'Mulish', sans-serif;
-  background: linear-gradient(rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+  font-family: $general-font;
+  background: $bg-color;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -83,11 +89,11 @@ a {
 }
 
 .input {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $bg-color-opacity;
   border: 2px solid white;
   border-radius: 35px;
   color: white;
-  font-family: 'Muli', sans-serif;
+  font-family: $general-font;
   font-size: 16px;
   height: 50px;
   outline: none;
@@ -157,7 +163,7 @@ a {
 }
 
 .carousel-item__details {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  background: $bg-color-carousel;
   font-size: 10px;
   color: white;
   opacity: 0;
@@ -249,7 +255,7 @@ a {
 }
 
 .register__container {
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: $bg-color-opacity;
   border: 2px solid white;
   border-radius: 35px;
   color: white;
@@ -310,7 +316,7 @@ a {
 }
 
 .login__container {
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: $bg-color-opacity;
   border: 2px solid white;
   border-radius: 35px;
   display: flex;
@@ -344,7 +350,7 @@ a {
   background-color: transparent;
   border: 0px;
   border-bottom: 2px solid white;
-  font-family: 'Mulish', sans-serif;
+  font-family: $general-font;
   margin-top: 15px;
   margin-bottom: 15px;
   outline: none;
@@ -357,7 +363,7 @@ a {
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  font-family: 'Mulish', sans-serif;
+  font-family: $general-font;
   font-weight: bold;
   font-size: 18px;
   height: 50px;
@@ -473,7 +479,7 @@ a {
 
 .page-error__container {
   align-items: center;
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: $bg-color-opacity;
   border: 2px solid white;
   border-radius: 35px;
   display: flex;
