@@ -1,2 +1,2 @@
-# Platzi-Video
-Full web app video. HTML, CSS, JS, React.js.
+# Platzi Video 💚
+Full web app video.
